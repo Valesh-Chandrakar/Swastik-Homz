@@ -1,0 +1,117 @@
+###################
+# Java / Maven
+###################
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+**/*.nar
+**/hs_err_pid*
+**/replay_pid*
+**/.mvn/wrapper/maven-wrapper.jar
+**/dependency-reduced-pom.xml
+**/mvnw
+**/mvnw.cmd
+
+###################
+# Spring Boot
+###################
+**/spring.log
+**/*.log
+**/logs/
+
+###################
+# IntelliJ IDEA
+###################
+.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+**/out/
+
+###################
+# Eclipse / STS
+###################
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+.factorypath
+.apt_generated/
+
+###################
+# VS Code
+###################
+.vscode/
+*.code-workspace
+
+###################
+# Node.js / npm
+###################
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+**/package-lock.json.bak
+
+###################
+# Vite / React build
+###################
+**/dist/
+**/dist-ssr/
+**/.vite/
+**/build/
+
+###################
+# Environment / secrets
+###################
+**/.env
+**/.env.local
+**/.env.*.local
+**/application-local.yml
+**/application-local.properties
+**/secrets.yml
+**/*.pem
+**/*.key
+**/credentials.json
+
+###################
+# Uploaded files (runtime)
+###################
+**/uploads/
+**/upload/
+**/files/
+
+###################
+# OS / Misc
+###################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+###################
+# Database dumps (keep schema/sample-data; ignore actual dumps)
+###################
+*.sql.bak
+*.dump
+*.mysqldump
+data/
+
+###################
+# Tooling cache
+###################
+.tmp/
+.cache/
+*.swp
+*.swo
+*~
+
+###################
+# Local PowerShell artifacts
+###################
+*.local.ps1

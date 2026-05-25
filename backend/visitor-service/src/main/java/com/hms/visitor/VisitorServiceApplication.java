@@ -1,0 +1,9 @@
+package com.hms.visitor;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication @EnableDiscoveryClient
+public class VisitorServiceApplication {
+    public static void main(String[] args) { SpringApplication.run(VisitorServiceApplication.class, args); }
+}
