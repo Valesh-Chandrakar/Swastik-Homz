@@ -1,0 +1,24 @@
+Invoke-RestMethod -Uri http://localhost:9090/api/auth/register -Method POST -ContentType application/json -Body '{"email":"admin@hms.com","phone":"9000000001","password":"password123","role":"ADMIN"}'
+
+first on
+Terminal 1 — Config Server
+Terminal 2 — Eureka Server
+Terminal 3 — API Gateway
+ Step 3 — Start microservices (one-liner)
+        cd "C:\Users\2478553\OneDrive - Cognizant\Documents\Hostel Management System"
+        .\start-all.ps1
+
+👥 Step 4 — Seed accounts (first time only)
+Once auth-service is up:
+
+cd "C:\Users\2478553\OneDrive - Cognizant\Documents\Hostel Management System\database"
+.\seed-accounts.ps1
+This registers admin, owner, warden, staff, and 3 students. All passwords are password123.
+
+🌐 Step 5 — Start the frontend
+In a new terminal:
+
+cd "C:\Users\2478553\OneDrive - Cognizant\Documents\Hostel Management System\frontend\hms-ui"
+npm install        # First time only
+npm run dev
+Frontend opens at http://localhost:3000
